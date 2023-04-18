@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    background-color: #c3c9cc;
+    border-radius: 1em;
+    margin: 5%;
+    padding: 5%;
+}
+
+p {
+    margin-bottom: 0.5em;
+}

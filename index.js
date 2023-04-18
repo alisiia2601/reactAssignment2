@@ -79,5 +79,48 @@ console.log('isToday', isToday(dateSentAsArgument))
 console.log('isAfter', isAfter(dateSentAsArgument, currentDate))
 console.log('isBefore', isBefore(dateSentAsArgument, currentDate))
 
+let htmlContent = `
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Assignment two</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <header>
+            <h1>OUTPUT HTML </h1>
+        </header>
+        <main>
+            <div class='container'>
+                <p>File run last on:</p>
+                <p>${today}</p>
+            </div>
+
+            <div class='container'>
+                <p>The JS Framework course started ${startOfCourse} ago</p>
+            </div>
+
+            <div class='container'>
+                <p>Name of author:</p>
+                <p>${first} ${last}</p>
+            </div>
+
+            <div class='container'>
+                <p>Local version specifications:</p>
+                <p>npm & node: ${process.env.npm_config_user_agent}</p>
+                <p>git version: ${gitVersion}</p>
+            </div>
+
+        </main>
+    </body>
+</html>
+`;
+
+await fs.writeFile('index.md', fileContent);
+await fs.writeFile('index.html', htmlContent);
+
 
 
